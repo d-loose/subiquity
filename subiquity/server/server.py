@@ -198,7 +198,6 @@ INSTALL_MODEL_NAMES = ModelNames(
 POSTINSTALL_MODEL_NAMES = ModelNames(
     {
         "drivers",
-        "identity",
         "locale",
         "packages",
         "snaplist",
@@ -206,7 +205,7 @@ POSTINSTALL_MODEL_NAMES = ModelNames(
         "ubuntu_pro",
         "userdata",
     },
-    desktop={"timezone", "codecs", "active_directory", "network"},
+    desktop={"codecs", "network"},
     server={"network"},
 )
 
