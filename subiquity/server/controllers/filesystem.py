@@ -935,6 +935,8 @@ class FilesystemController(SubiquityController, FilesystemManipulator):
         [volume] = self._info.system.volumes.values()
         self._on_volume = snapdtypes.OnVolume.from_volume(volume)
         self._volumes_auth = snapdtypes.VolumesAuth.from_choice(choice)
+        log.debug(f"guided choice: {choice=}")
+        log.debug(f"volumes auth: {self._volumes_auth=}")
 
         preserved_parts = set()
 
